@@ -5,10 +5,9 @@
 	
 		<div class="container" id="ofertas">
 			<div th:replace="~{base :: titulo('Faça sua Oferta')}"></div>
-							
+						
 			<div class="card mb-3" v-for="pedido in pedidos">
 				<div class="card-header alert-dark">{{pedido.nomeProduto}}</div>
-				
 				<div class="card-body">
 					<div class="row">
 						<div class="col-12 col-sm-8  mb-3">
@@ -16,7 +15,6 @@
 								<div class="col-md-5">Valor: <input /></div>
 								<div class="col-md-7">Data da entrega: <input /></div>
 							</div>
-							
 							<div>Produto</div>
 							<div> <a v-bind:href="pedido.urlProduto">{{pedido.nomeProduto}}</a></div>
 							
